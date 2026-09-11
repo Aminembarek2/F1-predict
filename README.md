@@ -7,9 +7,6 @@ advantage over the championship table.
 
 ![How the forecast is built: sources, one chronological panel, leakage gates, three fitted models, the Monte Carlo simulator, and the published probabilities](images/architecture.svg)
 
-Regenerate the diagram with `python -m scripts.make_architecture` — its counts are
-read from the panel, so it cannot describe a system that no longer exists.
-
 ## Run locally
 
 Python 3.12 is used for the checked-in environment. The historical panel is
@@ -66,10 +63,12 @@ The derivation, assumptions, tests and remaining limitations are in
 clean-air pace, informative censoring and race-wide incident dynamics remain
 open. The available sample does not prove an absolute ceiling on prediction.
 
-## Madrid 2026 — issued before FP1
+## Madrid 2026 — forecast to a pre-FP1 data cutoff
 
-Round 14, forecast from an entry list dated 2026-09-07 with an information cutoff
-of 2026-09-11T01:00Z, before any car ran. 100,000 simulated races, seed 20260913.
+Round 14, from an entry list dated 2026-09-07 and an information cutoff of
+2026-09-11T01:00Z. The model used nothing after that cutoff, so no lap of this
+weekend informs it; the artefact itself was written later that day, after Friday
+practice had run. 100,000 simulated races, seed 20260913.
 
 | # | Driver | Win | Podium | Top 10 | DNF risk |
 |--:|---|--:|--:|--:|--:|

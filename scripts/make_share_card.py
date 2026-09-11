@@ -90,6 +90,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run", default="forecast_2026_14_pre_weekend")
     parser.add_argument("--out", default="madrid_2026_card.png")
+    parser.add_argument(
+        "--minimal",
+        action="store_true",
+        help="board only: drop the closing paragraph and let the table fill the frame",
+    )
     args = parser.parse_args()
     ensure_dirs()
 
@@ -113,7 +118,7 @@ def main() -> None:
     # ---- masthead -------------------------------------------------------
     ax.text(
         L,
-        0.955,
+        0.966,
         _track("FORMULA 1  ·  2026  ·  ROUND 14"),
         color=ACCENT,
         fontname=mono,
@@ -122,11 +127,11 @@ def main() -> None:
     )
     ax.text(
         L,
-        0.905,
+        0.906,
         "MADRID",
         color=INK,
         fontname=display,
-        fontsize=92,
+        fontsize=82,
         va="center",
         ha="left",
     )
@@ -140,15 +145,15 @@ def main() -> None:
         va="center",
     )
     stamp = [
-        "FORECAST ISSUED",
+        "DATA CUTOFF",
         "11 SEP 2026, 01:00 UTC",
-        "BEFORE FP1 — NO LAPS RUN",
+        "PUBLISHED AFTER FRIDAY PRACTICE",
         "100,000 SIMULATED RACES",
     ]
     for i, row in enumerate(stamp):
         ax.text(
             R,
-            0.936 - i * 0.0165,
+            0.948 - i * 0.0165,
             _track(row),
             color=INK2 if i % 2 else MUTED,
             fontname=mono,
@@ -193,7 +198,7 @@ def main() -> None:
     line(0.806)
 
     # ---- board ----------------------------------------------------------
-    top, bottom = 0.798, 0.262
+    top, bottom = (0.798, 0.115) if args.minimal else (0.798, 0.262)
     n = len(df)
     step = (top - bottom) / n
     bar_x0, bar_w = 0.365, 0.245
@@ -298,40 +303,41 @@ def main() -> None:
                 zorder=2,
             )
 
-    line(0.248)
+    line(0.101 if args.minimal else 0.248)
 
     # ---- footer ---------------------------------------------------------
+    if not args.minimal:
+        ax.text(
+            L,
+            0.212,
+            "CALIBRATED, AND HONEST ABOUT IT",
+            color=INK,
+            fontname=display,
+            fontsize=31,
+            va="center",
+        )
+        # Written for a reader, not a reviewer: the same facts, said plainly.
+        caveat = (
+            "Winner probabilities are well calibrated: expected calibration error 0.008, and 79.8%\n"
+            "of finishes land inside the published P10\u2013P90 band against a nominal 80%.\n"
+            "Across 87 strictly scored races, the model matched the championship standings baseline\n"
+            "on winner accuracy: 43 correct each. On the held-out 2026 season, it picked 2 of 12\n"
+            "winners, versus 5 for the standings baseline.\n"
+            "Read the probabilities and the retirement risks, not the top line."
+        )
+        ax.text(
+            L,
+            0.186,
+            caveat,
+            color=INK2,
+            fontname=body,
+            fontsize=12.4,
+            va="top",
+            linespacing=1.46,
+        )
     ax.text(
         L,
-        0.212,
-        "CALIBRATED, AND HONEST ABOUT IT",
-        color=INK,
-        fontname=display,
-        fontsize=31,
-        va="center",
-    )
-    # Written for a reader, not a reviewer: the same facts, said plainly.
-    caveat = (
-        "Winner probabilities are well calibrated: expected calibration error 0.008, and 79.8%\n"
-        "of finishes land inside the published P10\u2013P90 band against a nominal 80%.\n"
-        "Across 87 strictly scored races, the model matched the championship standings baseline\n"
-        "on winner accuracy: 43 correct each. On the held-out 2026 season, it picked 2 of 12\n"
-        "winners, versus 5 for the standings baseline.\n"
-        "Read the probabilities and the retirement risks, not the top line."
-    )
-    ax.text(
-        L,
-        0.186,
-        caveat,
-        color=INK2,
-        fontname=body,
-        fontsize=12.4,
-        va="top",
-        linespacing=1.46,
-    )
-    ax.text(
-        L,
-        0.030,
+        0.062 if args.minimal else 0.030,
         "MONTE CARLO SIMULATOR  \u00b7  100,000 RUNS  \u00b7  SEED 20260913",
         color=MUTED,
         fontname=mono,
@@ -340,7 +346,7 @@ def main() -> None:
     )
     ax.text(
         R,
-        0.030,
+        0.062 if args.minimal else 0.030,
         "NO LAPS OF THIS WEEKEND USED",
         color=ACCENT,
         fontname=mono,
