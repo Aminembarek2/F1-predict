@@ -17,3 +17,10 @@ dist/
 *.egg-info/
 .coverage
 htmlcov/
+
+# Artefacts of the superseded version. Preserved in git history at the first
+# commit, not carried in the working tree: nobody clones this to read the
+# outputs of the system it replaced.
+archive/
+results/archive/
+images/archive/

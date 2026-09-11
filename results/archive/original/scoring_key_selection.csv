@@ -1,9 +1,0 @@
-scoring_key,top1,winner_top3,ndcg5,spearman,rank_mae
-championship,0.457,0.772,0.691,0.67,3.936
-strength_raw,0.5,0.804,0.734,0.706,3.74
-sim_expected_finish,0.457,0.783,0.732,0.704,3.768
-sim_win_prob,0.5,0.804,0.731,0.685,3.872
-sim_expfinish_if_classified,0.511,0.815,0.738,0.706,3.746
-blend_25s_75c,0.489,0.783,0.724,0.711,3.749
-blend_50s_50c,0.489,0.783,0.733,0.716,3.716
-blend_75s_25c,0.467,0.793,0.732,0.713,3.703
