@@ -1,0 +1,428 @@
+{
+  "protocol": "chronological calibration; 2021 warm-up; 2022\u20132025 tuning",
+  "primary_metrics": [
+    "top1",
+    "ndcg5",
+    "winner_logloss"
+  ],
+  "bootstrap_draws": 10000,
+  "favourable_mass_required": 0.975,
+  "decisions": [
+    {
+      "model": "calibrated_championship",
+      "incumbent": "strength_mc",
+      "adopt": false,
+      "gates": {
+        "tests_passed": true,
+        "tuning_only": true,
+        "enough_paired_races": true,
+        "timestamped_entry_and_history_snapshots": false,
+        "calibration_not_degraded": false,
+        "winner_brier_not_degraded": false,
+        "paired_primary_improvement": false,
+        "block_sensitivity_supports_improvement": false,
+        "chronological_variance_fits_converged": true
+      },
+      "n_races": 92,
+      "win_ece": 0.0058896669,
+      "incumbent_win_ece": 0.0045553669,
+      "paired": {
+        "top1": {
+          "delta": -0.0108695652,
+          "ci_low": -0.0869565217,
+          "ci_high": 0.0652173913,
+          "p_better": 0.3262,
+          "n_races": 92
+        },
+        "ndcg5": {
+          "delta": -0.0105441827,
+          "ci_low": -0.0414448548,
+          "ci_high": 0.0195882747,
+          "p_better": 0.2456,
+          "n_races": 92
+        },
+        "winner_logloss": {
+          "delta": 0.2244852285,
+          "ci_low": 0.0681248948,
+          "ci_high": 0.4048443986,
+          "p_better": 0.0016,
+          "n_races": 92
+        }
+      },
+      "block_sensitivity": {
+        "top1": [
+          {
+            "delta": -0.0108695652,
+            "ci_low": -0.0760869565,
+            "ci_high": 0.0434782609,
+            "p_better": 0.3127,
+            "n_races": 92,
+            "block_size": 4
+          },
+          {
+            "delta": -0.0108695652,
+            "ci_low": -0.0652173913,
+            "ci_high": 0.0326086957,
+            "p_better": 0.2744,
+            "n_races": 92,
+            "block_size": 8
+          }
+        ],
+        "ndcg5": [
+          {
+            "delta": -0.0105441827,
+            "ci_low": -0.0386499328,
+            "ci_high": 0.0173348764,
+            "p_better": 0.2376,
+            "n_races": 92,
+            "block_size": 4
+          },
+          {
+            "delta": -0.0105441827,
+            "ci_low": -0.0398373249,
+            "ci_high": 0.0181583383,
+            "p_better": 0.2391,
+            "n_races": 92,
+            "block_size": 8
+          }
+        ],
+        "winner_logloss": [
+          {
+            "delta": 0.2244852285,
+            "ci_low": 0.0803345114,
+            "ci_high": 0.3885908068,
+            "p_better": 0.0002,
+            "n_races": 92,
+            "block_size": 4
+          },
+          {
+            "delta": 0.2244852285,
+            "ci_low": 0.0914859055,
+            "ci_high": 0.3756439648,
+            "p_better": 0.0001,
+            "n_races": 92,
+            "block_size": 8
+          }
+        ]
+      }
+    },
+    {
+      "model": "calibrated_state_space",
+      "incumbent": "strength_mc",
+      "adopt": false,
+      "gates": {
+        "tests_passed": true,
+        "tuning_only": true,
+        "enough_paired_races": true,
+        "timestamped_entry_and_history_snapshots": false,
+        "calibration_not_degraded": false,
+        "winner_brier_not_degraded": true,
+        "paired_primary_improvement": false,
+        "block_sensitivity_supports_improvement": false,
+        "chronological_variance_fits_converged": true
+      },
+      "n_races": 92,
+      "win_ece": 0.0108236901,
+      "incumbent_win_ece": 0.0045553669,
+      "paired": {
+        "top1": {
+          "delta": 0.0217391304,
+          "ci_low": -0.0434782609,
+          "ci_high": 0.0869565217,
+          "p_better": 0.6816,
+          "n_races": 92
+        },
+        "ndcg5": {
+          "delta": -0.0023747023,
+          "ci_low": -0.0317788072,
+          "ci_high": 0.0265370681,
+          "p_better": 0.4294,
+          "n_races": 92
+        },
+        "winner_logloss": {
+          "delta": -0.0176027402,
+          "ci_low": -0.1263197495,
+          "ci_high": 0.0870160183,
+          "p_better": 0.6085,
+          "n_races": 92
+        }
+      },
+      "block_sensitivity": {
+        "top1": [
+          {
+            "delta": 0.0217391304,
+            "ci_low": -0.0434782609,
+            "ci_high": 0.0869565217,
+            "p_better": 0.6901,
+            "n_races": 92,
+            "block_size": 4
+          },
+          {
+            "delta": 0.0217391304,
+            "ci_low": -0.0434782609,
+            "ci_high": 0.0760869565,
+            "p_better": 0.6991,
+            "n_races": 92,
+            "block_size": 8
+          }
+        ],
+        "ndcg5": [
+          {
+            "delta": -0.0023747023,
+            "ci_low": -0.0361571914,
+            "ci_high": 0.0283462064,
+            "p_better": 0.4577,
+            "n_races": 92,
+            "block_size": 4
+          },
+          {
+            "delta": -0.0023747023,
+            "ci_low": -0.0360633798,
+            "ci_high": 0.0290972509,
+            "p_better": 0.4445,
+            "n_races": 92,
+            "block_size": 8
+          }
+        ],
+        "winner_logloss": [
+          {
+            "delta": -0.0176027402,
+            "ci_low": -0.1229458331,
+            "ci_high": 0.0906072363,
+            "p_better": 0.6245,
+            "n_races": 92,
+            "block_size": 4
+          },
+          {
+            "delta": -0.0176027402,
+            "ci_low": -0.1169337565,
+            "ci_high": 0.0804130476,
+            "p_better": 0.6283,
+            "n_races": 92,
+            "block_size": 8
+          }
+        ]
+      }
+    },
+    {
+      "model": "state_space",
+      "incumbent": "strength_mc",
+      "adopt": false,
+      "gates": {
+        "tests_passed": true,
+        "tuning_only": true,
+        "enough_paired_races": true,
+        "timestamped_entry_and_history_snapshots": false,
+        "calibration_not_degraded": false,
+        "winner_brier_not_degraded": false,
+        "paired_primary_improvement": false,
+        "block_sensitivity_supports_improvement": false,
+        "chronological_variance_fits_converged": true
+      },
+      "n_races": 92,
+      "win_ece": 0.0336150602,
+      "incumbent_win_ece": 0.0045553669,
+      "paired": {
+        "top1": {
+          "delta": 0.0217391304,
+          "ci_low": -0.0434782609,
+          "ci_high": 0.0869565217,
+          "p_better": 0.6816,
+          "n_races": 92
+        },
+        "ndcg5": {
+          "delta": -0.0023747023,
+          "ci_low": -0.0317788072,
+          "ci_high": 0.0265370681,
+          "p_better": 0.4294,
+          "n_races": 92
+        },
+        "winner_logloss": {
+          "delta": 0.3739896446,
+          "ci_low": 0.2487150614,
+          "ci_high": 0.4922555669,
+          "p_better": 0.0,
+          "n_races": 92
+        }
+      },
+      "block_sensitivity": {
+        "top1": [
+          {
+            "delta": 0.0217391304,
+            "ci_low": -0.0434782609,
+            "ci_high": 0.0869565217,
+            "p_better": 0.6901,
+            "n_races": 92,
+            "block_size": 4
+          },
+          {
+            "delta": 0.0217391304,
+            "ci_low": -0.0434782609,
+            "ci_high": 0.0760869565,
+            "p_better": 0.6991,
+            "n_races": 92,
+            "block_size": 8
+          }
+        ],
+        "ndcg5": [
+          {
+            "delta": -0.0023747023,
+            "ci_low": -0.0361571914,
+            "ci_high": 0.0283462064,
+            "p_better": 0.4577,
+            "n_races": 92,
+            "block_size": 4
+          },
+          {
+            "delta": -0.0023747023,
+            "ci_low": -0.0360633798,
+            "ci_high": 0.0290972509,
+            "p_better": 0.4445,
+            "n_races": 92,
+            "block_size": 8
+          }
+        ],
+        "winner_logloss": [
+          {
+            "delta": 0.3739896446,
+            "ci_low": 0.2562343251,
+            "ci_high": 0.4937240899,
+            "p_better": 0.0,
+            "n_races": 92,
+            "block_size": 4
+          },
+          {
+            "delta": 0.3739896446,
+            "ci_low": 0.2596712551,
+            "ci_high": 0.4835790685,
+            "p_better": 0.0,
+            "n_races": 92,
+            "block_size": 8
+          }
+        ]
+      }
+    }
+  ],
+  "leaderboard": [
+    {
+      "model": "calibrated_state_space",
+      "n_races": 92.0,
+      "top1": 0.5217391304,
+      "top1_ci_low": 0.420856974,
+      "top1_ci_high": 0.6208786178,
+      "winner_top3": 0.75,
+      "ndcg5": 0.7314907095,
+      "spearman": 0.6975512507,
+      "rank_mae": 3.8356788711,
+      "winner_logloss": 1.4338643197,
+      "winner_brier": 0.0315458358
+    },
+    {
+      "model": "state_space",
+      "n_races": 92.0,
+      "top1": 0.5217391304,
+      "top1_ci_low": 0.420856974,
+      "top1_ci_high": 0.6208786178,
+      "winner_top3": 0.75,
+      "ndcg5": 0.7314907095,
+      "spearman": 0.6975512507,
+      "rank_mae": 3.8356788711,
+      "winner_logloss": 1.8254567045,
+      "winner_brier": 0.0380558764
+    },
+    {
+      "model": "strength_mc",
+      "n_races": 92.0,
+      "top1": 0.5,
+      "top1_ci_low": 0.3998983151,
+      "top1_ci_high": 0.6001016849,
+      "winner_top3": 0.8043478261,
+      "ndcg5": 0.7338654117,
+      "spearman": 0.7065133909,
+      "rank_mae": 3.7385583524,
+      "winner_logloss": 1.4514670599,
+      "winner_brier": 0.032842575
+    },
+    {
+      "model": "calibrated_championship",
+      "n_races": 92.0,
+      "top1": 0.4891304348,
+      "top1_ci_low": 0.3894871252,
+      "top1_ci_high": 0.589645079,
+      "winner_top3": 0.8043478261,
+      "ndcg5": 0.723321229,
+      "spearman": 0.6900639115,
+      "rank_mae": 3.796395881,
+      "winner_logloss": 1.6759522884,
+      "winner_brier": 0.0356788336
+    },
+    {
+      "model": "championship",
+      "n_races": 92.0,
+      "top1": 0.4891304348,
+      "top1_ci_low": 0.3894871252,
+      "top1_ci_high": 0.589645079,
+      "winner_top3": 0.8043478261,
+      "ndcg5": 0.723321229,
+      "spearman": 0.6900639115,
+      "rank_mae": 3.796395881,
+      "winner_logloss": null,
+      "winner_brier": null
+    },
+    {
+      "model": "form5",
+      "n_races": 92.0,
+      "top1": 0.4673913043,
+      "top1_ci_low": 0.3688011793,
+      "top1_ci_high": 0.568595433,
+      "winner_top3": 0.7065217391,
+      "ndcg5": 0.693933547,
+      "spearman": 0.663027697,
+      "rank_mae": 3.9795512332,
+      "winner_logloss": null,
+      "winner_brier": null
+    },
+    {
+      "model": "last_race",
+      "n_races": 92.0,
+      "top1": 0.402173913,
+      "top1_ci_low": 0.3078495879,
+      "top1_ci_high": 0.5043402491,
+      "winner_top3": 0.6956521739,
+      "ndcg5": 0.6697108109,
+      "spearman": 0.5338141087,
+      "rank_mae": 4.3639270277,
+      "winner_logloss": null,
+      "winner_brier": null
+    },
+    {
+      "model": "uniform",
+      "n_races": 92.0,
+      "top1": 0.0,
+      "top1_ci_low": 0.0,
+      "top1_ci_high": 0.0400813893,
+      "winner_top3": 0.0,
+      "ndcg5": 0.0421659099,
+      "spearman": -0.037257657,
+      "rank_mae": 7.115617849,
+      "winner_logloss": 2.9878966209,
+      "winner_brier": 0.0478620335
+    }
+  ],
+  "winner_ece_bin_edges": [
+    0.0,
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.35,
+    0.55,
+    1.0
+  ],
+  "other_outcome_ece_bins": "10 equal-width bins",
+  "test_evidence": "results/tests.xml",
+  "test_report_sha256": "58d2a02bc1637915d4057fec1ccbd2dd990f1e7d4202fcbedd391f91b89f9698",
+  "test_count": 177,
+  "hyperparameter_uncertainty": "conditional empirical Bayes; not integrated",
+  "regulation_policy": "restart constructor states at a regime boundary; carry driver contrasts"
+}

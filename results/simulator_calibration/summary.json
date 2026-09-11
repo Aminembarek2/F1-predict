@@ -1,0 +1,25 @@
+{
+  "race_score": "rank",
+  "seasons": [
+    2024,
+    2025
+  ],
+  "n_races": 48,
+  "n_evaluations": 90,
+  "n_sims_per_evaluation": 3000,
+  "incumbent": {
+    "qualifying_noise": 0.55,
+    "race_pace_noise": 0.6,
+    "start_swing_slots": 1.6,
+    "strategy_swing_slots": 2.0
+  },
+  "fitted": {
+    "qualifying_noise": 0.0783617884047526,
+    "race_pace_noise": 0.20713069744470902,
+    "start_swing_slots": 0.1468414742179627,
+    "strategy_swing_slots": 0.5496121155556423
+  },
+  "incumbent_winner_logloss": 1.8582135541241411,
+  "fitted_winner_logloss": 1.8150442647295701,
+  "improvement": 0.04316928939457099
+}

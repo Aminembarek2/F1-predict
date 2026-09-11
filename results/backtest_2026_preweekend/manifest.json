@@ -1,0 +1,119 @@
+{
+  "created_at_utc": "2026-09-11T11:32:06.037068+00:00",
+  "model_config": {
+    "recency_half_life_races": 6.0,
+    "cross_regime_weight": 0.35,
+    "ridge_alpha": 1.0,
+    "driver_shrinkage_races": 3.0,
+    "dnf_prior_alpha": 1.2,
+    "dnf_prior_beta": 12.0,
+    "n_simulations": 50000,
+    "seed": 20260913
+  },
+  "dependencies": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pyarrow": "25.0.1"
+  },
+  "sha256": {
+    "data/raw/practice.parquet": "75d43ab327e042ff06dd519c509caede27b10f3d46c935609db19d95f0099aa0",
+    "data/raw/qualifying.parquet": "904351091bb2019f1fd057d233bc52cb888896c0d4cee9972f6eba29ca540c43",
+    "data/raw/results.parquet": "3094ddb51eff3472c430a4a217926c895ddd90ba81baaa610276c4a3c939e1c5",
+    "data/raw/schedule.parquet": "f28c014fe972202076a91210685adfff41b0bea9eb6925d1b7b9f1cf537c3841",
+    "data/raw/standings.parquet": "53c3d05e838da7a5e302d7e1e167b0eddcf4571b2c3b330f91a84b0e42ba0439",
+    "f1pred/__init__.py": "594dc6c32dd5d9896ba7da0d1eb5b491bd252cc4ef266bd22fbf3e174991b00f",
+    "f1pred/artifacts.py": "ebcf9d83938949f15c6b5212ecfd6a072d04033b7989179fbeb53c37153a848f",
+    "f1pred/cli.py": "8966432d0135031a5e06191a0360e94a76375cda119017f1277e2639cec6183b",
+    "f1pred/config.py": "476d72f0ab135c6b93513345aed33d8067cf9c4b7ab77678bb6fc1ad0bd8c12c",
+    "f1pred/evaluation/__init__.py": "641171dee645f24895d1e34ac168064f29c51715b04335b0de0dcb2a393b4cae",
+    "f1pred/evaluation/ablation.py": "6882e2ba5a554fe1563cc85109960d2afe5ab84ca42aa53361d77dfd5c45ee8f",
+    "f1pred/evaluation/backtest.py": "22cdf625e21202ec4864683f7eac4361363b9e08f610e789c70730577b3b032d",
+    "f1pred/evaluation/experiments.py": "4f4fb4c37e270a64badec838790bbf80ea1b273fb290a55a84b95861ae66f76e",
+    "f1pred/evaluation/market.py": "87dd57ca7a1b7daf4a2d17f12dcc7aac3eb0ccedfbf0be5dcb565a70abe9eb4b",
+    "f1pred/evaluation/metrics.py": "aa6b9447bba5a24241cc52ccb1eafefe7e52b71e08bb34ddf1f6e3d3150a2677",
+    "f1pred/features/__init__.py": "cb74ad2148fdea878d1aa3cc4c61a954c9b617734108ef2647fa1280c629749b",
+    "f1pred/features/circuits.py": "54f3988394dc9e0f59eb6c3db0dfeda3eac55b5d1bbde6817113e10690895450",
+    "f1pred/features/compatibility.py": "61458fcc049c2d6a550d1db7cccdecf544d4f2c9e6675e8d7bec75f588279498",
+    "f1pred/features/pace.py": "c69c07f1dd582690d33ae1a0a1619daeccd0261db175cf3ebe629003f5c2f839",
+    "f1pred/features/practice.py": "0e0b68233028bdaf79b5504bb486848c84cb90e2efa331f20892ea6d085ea7ef",
+    "f1pred/features/reliability.py": "3b8b7071a89136b1dc17226a3dfa3653fb11694f93d5ec1adb759fba61d6ad6b",
+    "f1pred/forecast.py": "585d03c1459fbd5b4838333ac48e18d3a792f1be5c9b2f127b4609aeaf784558",
+    "f1pred/http_cache.py": "f358710c8ecb640926f3bbc7fd8c40f50a8b308076ad15b0dea9af2e5e531511",
+    "f1pred/leakage.py": "2a452599bd83c34f9f2a559598e9b0d6f622020b6c21b2bf557207af7388f735",
+    "f1pred/legacy/__init__.py": "ca852368ec44bee704ad8900d173953a0d820d0ed9d553df1fc93a33f3dcdc81",
+    "f1pred/legacy/aggregation.py": "305d248b67c5f17cfc6c8cdd4788d2b55970589882c8849562f38708a31f89e7",
+    "f1pred/legacy/data_sources.py": "eb2b98103144a8856af21555d5325b67d3f8d9cfe7646e37fcdf451705e2c659",
+    "f1pred/legacy/features.py": "9181808e71be68d4ea71a5bd34d6ba60fd12ee458ebc66c88fc5ff76013b2b25",
+    "f1pred/legacy/leakage.py": "9ac280d265ae01147426e06cf7b131bec08cc6c4b1dfb0b0cf18ba8d58ac5c4b",
+    "f1pred/legacy/modeling.py": "6047835d501639edb94387f82ecb7a846b9a4e48dfa725f64004249bba0a6c2e",
+    "f1pred/legacy/proxy_experiment.py": "03df4dc96ebc79ea65f7353eeba67f72ec62c89600efbcab169241b7c5042286",
+    "f1pred/legacy/session_pipeline.py": "2befcb6d4542946abf482b54d253d78dc5b0c2d9751b19d44e4abce4c90bd630",
+    "f1pred/models/__init__.py": "bdbc8a2469d5f6e8461fd837f7cd44f5721cc17403730dd8998ac905bf9efa3f",
+    "f1pred/models/calibration.py": "b3075ff414cae05c20d86c42000e76be32b1b1ecde50d5f0325b4bca0fe0c932",
+    "f1pred/models/ranking.py": "f5fb1c359a077a7d9ff7f77f656763f99f654568faf10743401aaf279a3d5208",
+    "f1pred/pipeline.py": "ac37475558203390b3b1d49cbf83cbcc1803319dca05d415f2504e38d6b35fc5",
+    "f1pred/sim/__init__.py": "78083d62f89f4b517068f2bbb11bd6354a8df29b99f8a55aef8bac7d139c96da",
+    "f1pred/sim/race.py": "77294b0723d2ea184976764d5cce066b2509313dbba42e9e7734e421867c759f",
+    "f1pred/sources/__init__.py": "b7075c5c8c4e6b20a567f3642ad08fd38b899665c4a7dc129ad6c71107d48a90",
+    "f1pred/sources/jolpica.py": "b213686a6970cc7e114bd1c6cd81e87a6be769af1cc736c6f6256b9fbfe95030",
+    "f1pred/sources/openf1.py": "9ea879ad2271df64627373a7f531a520d221669a876e35e4790e9593d8d6ae50",
+    "f1pred/sources/timing.py": "0df3bed33844b731c3d4c26a8f9faba101d194af2a0800cafcae8078593168c8"
+  },
+  "command": "f1pred backtest",
+  "stage": "PRE_WEEKEND",
+  "seasons": [
+    2026
+  ],
+  "n_sims": 20000,
+  "seed": 20260913,
+  "evaluation_scope": "retrospective_conditional_field",
+  "calibration": [
+    {
+      "outcome": "winner",
+      "probability_column": "win_probability",
+      "n": 279,
+      "predicted_mean": 0.04659498207885305,
+      "observed_rate": 0.04659498207885305,
+      "ece": 0.0077788530465949845,
+      "brier": 0.03980966612903226
+    },
+    {
+      "outcome": "podium",
+      "probability_column": "podium_probability",
+      "n": 279,
+      "predicted_mean": 0.13978494623655913,
+      "observed_rate": 0.13978494623655913,
+      "ece": 0.05242114695340502,
+      "brier": 0.08754765198924733
+    },
+    {
+      "outcome": "top10",
+      "probability_column": "top10_probability",
+      "n": 279,
+      "predicted_mean": 0.4659498207885305,
+      "observed_rate": 0.4659498207885305,
+      "ece": 0.0646483870967742,
+      "brier": 0.1641579874014337
+    },
+    {
+      "outcome": "dnf",
+      "probability_column": "dnf_probability",
+      "n": 279,
+      "predicted_mean": 0.13853148271232965,
+      "observed_rate": 0.17562724014336917,
+      "ece": 0.04476529831967852,
+      "brier": 0.1396714795592703
+    },
+    {
+      "outcome": "finish_inside_p10_p90",
+      "probability_column": "finish_p10..finish_p90",
+      "n": 279,
+      "predicted_mean": 0.8,
+      "observed_rate": 0.8172043010752689,
+      "ece": 0.017204301075268824,
+      "brier": NaN
+    }
+  ]
+}

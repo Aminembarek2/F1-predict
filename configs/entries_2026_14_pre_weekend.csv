@@ -1,0 +1,23 @@
+driver_id,driver_code,constructor_id,season,round,race_id,circuit_id,source,observed_at,cutoff_utc
+albon,ALB,williams,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+alonso,ALO,aston_martin,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+antonelli,ANT,mercedes,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+arvid_lindblad,LIN,rb,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+bearman,BEA,haas,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+bortoleto,BOR,audi,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+bottas,BOT,cadillac,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+colapinto,COL,alpine,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+gasly,GAS,alpine,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+hamilton,HAM,ferrari,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+hulkenberg,HUL,audi,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+lawson,LAW,red_bull,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+leclerc,LEC,ferrari,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+max_verstappen,VER,red_bull,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+norris,NOR,mclaren,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+ocon,OCO,haas,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+perez,PER,cadillac,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+piastri,PIA,mclaren,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+russell,RUS,mercedes,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+sainz,SAI,williams,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+stroll,STR,aston_martin,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00
+tsunoda,TSU,rb,2026,14,2026_14,madring,previous_event_projection,2026-09-07 00:00:00+00:00,2026-09-11T01:00:00+00:00

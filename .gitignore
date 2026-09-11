@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# Raw API responses: large, and re-fetched on demand by the cached HTTP layer.
+data/cache/
+# The ingested panel itself is small and is committed, so every result in
+# results/ can be reproduced without re-fetching anything.
+!data/raw/*.parquet
+
+# Packaging and local test artifacts.
+build/
+dist/
+*.egg-info/
+.coverage
+htmlcov/

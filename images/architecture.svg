@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1010" width="1240" height="1010" role="img" aria-label="How the forecast is built">
+<rect width="1240" height="1010" fill="#0e1117"/>
+<text x="40" y="46" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="25" font-weight="700" fill="#e9ecf3" text-anchor="start" letter-spacing="1.2">HOW THE FORECAST IS BUILT</text>
+<text x="40" y="70" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#79839a" text-anchor="start">Every fitting function takes an explicit as-of index, so the live forecast and the backtest run through identical code.</text>
+<line x1="40" y1="88" x2="1200" y2="88" stroke="#e9ecf3" stroke-width="2"/>
+<text x="40" y="120" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" fill="#ff5a37" text-anchor="start" letter-spacing="2.2">01  SOURCES</text>
+<rect x="40.0" y="134" width="374.6666666666667" height="86" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<text x="56.0" y="158" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#e9ecf3" text-anchor="start">Jolpica</text>
+<text x="56.0" y="178" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">results, qualifying</text>
+<text x="56.0" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">driver standings</text>
+<text x="56.0" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">275 races, 2014-2026</text>
+<rect x="432.6666666666667" y="134" width="374.6666666666667" height="86" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<text x="448.6666666666667" y="158" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#e9ecf3" text-anchor="start">OpenF1 + F1 timing</text>
+<text x="448.6666666666667" y="178" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">practice laps</text>
+<text x="448.6666666666667" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">on-track passes</text>
+<text x="448.6666666666667" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">pit-lane times</text>
+<rect x="825.3333333333334" y="134" width="374.6666666666667" height="86" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<text x="841.3333333333334" y="158" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#e9ecf3" text-anchor="start">Reference</text>
+<text x="841.3333333333334" y="178" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">circuit specifications</text>
+<text x="841.3333333333334" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">for venues with no</text>
+<text x="841.3333333333334" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">racing history</text>
+<line x1="620.0" y1="220" x2="620.0" y2="237" stroke="#2b3342" stroke-width="1.5"/><path d="M616.0,237 L624.0,237 L620.0,244 Z" fill="#2b3342"/>
+<text x="40" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" fill="#ff5a37" text-anchor="start" letter-spacing="2.2">02  PANEL</text>
+<rect x="40" y="276" width="1160" height="74" rx="3" fill="#1d2430" stroke="#2b3342" stroke-width="1"/>
+<text x="58" y="302" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9ecf3" text-anchor="start">One chronological panel</text>
+<text x="58" y="322" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#aab4c4" text-anchor="start">A single authoritative event index on every table, plus the time each result was published.</text>
+<text x="1182" y="302" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" fill="#e9ecf3" text-anchor="end">9,859 observations</text>
+<text x="1182" y="322" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="end">5,295 qualifying · 4,564 race</text>
+<line x1="620.0" y1="350" x2="620.0" y2="367" stroke="#2b3342" stroke-width="1.5"/><path d="M616.0,367 L624.0,367 L620.0,374 Z" fill="#2b3342"/>
+<rect x="40" y="374" width="1160" height="52" rx="3" fill="#171c26" stroke="#e0a63a" stroke-width="1"/>
+<text x="58" y="398" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="600" fill="#e0a63a" text-anchor="start" letter-spacing="1.8">LEAKAGE GATES</text>
+<text x="58" y="416" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">Fails closed: an unregistered feature family is illegal by default.</text>
+<text x="1182" y="404" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="end">stage gate  ·  cutoff timestamp  ·  historical features use past races only</text>
+<line x1="620.0" y1="426" x2="620.0" y2="445" stroke="#2b3342" stroke-width="1.5"/><path d="M616.0,445 L624.0,445 L620.0,452 Z" fill="#2b3342"/>
+<text x="40" y="470" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" fill="#ff5a37" text-anchor="start" letter-spacing="2.2">03  MODELS FITTED ONLY ON INFORMATION AVAILABLE BEFORE THE TARGET RACE</text>
+<rect x="40.0" y="484" width="374.6666666666667" height="122" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<rect x="40.0" y="484" width="3" height="122" fill="#ff5a37"/>
+<text x="56.0" y="508" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9ecf3" text-anchor="start">Strength</text>
+<text x="56.0" y="525" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#79839a" text-anchor="start">driver + team strength estimated separately</text>
+<text x="56.0" y="548" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">team effect + driver effect</text>
+<text x="56.0" y="563" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">recent races count more (6-race half-life)</text>
+<text x="56.0" y="578" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">older rule eras count less</text>
+<text x="56.0" y="593" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">retirements excluded</text>
+<rect x="432.6666666666667" y="484" width="374.6666666666667" height="122" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<rect x="432.6666666666667" y="484" width="3" height="122" fill="#ff5a37"/>
+<text x="448.6666666666667" y="508" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9ecf3" text-anchor="start">Reliability</text>
+<text x="448.6666666666667" y="525" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#79839a" text-anchor="start">historical retirement / reliability model</text>
+<text x="448.6666666666667" y="548" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">team hazard (shared car)</text>
+<text x="448.6666666666667" y="563" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">driver excess vs. team-mate</text>
+<text x="448.6666666666667" y="578" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">circuit attrition multiplier</text>
+<text x="448.6666666666667" y="593" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">modelled separately from pace</text>
+<rect x="825.3333333333334" y="484" width="374.6666666666667" height="122" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<rect x="825.3333333333334" y="484" width="3" height="122" fill="#ff5a37"/>
+<text x="841.3333333333334" y="508" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9ecf3" text-anchor="start">Circuit</text>
+<text x="841.3333333333334" y="525" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#79839a" text-anchor="start">measured, then transferred</text>
+<text x="841.3333333333334" y="548" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">overtaking difficulty</text>
+<text x="841.3333333333334" y="563" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">retirement multiplier</text>
+<text x="841.3333333333334" y="578" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">new venues inherit from</text>
+<text x="841.3333333333334" y="593" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="400" fill="#aab4c4" text-anchor="start">nearest speed-profile analogues</text>
+<line x1="620.0" y1="606" x2="620.0" y2="625" stroke="#2b3342" stroke-width="1.5"/><path d="M616.0,625 L624.0,625 L620.0,632 Z" fill="#2b3342"/>
+<text x="40" y="650" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" fill="#ff5a37" text-anchor="start" letter-spacing="2.2">04  SIMULATOR</text>
+<rect x="40" y="664" width="1160" height="128" rx="3" fill="#1d2430" stroke="#2b3342" stroke-width="1"/>
+<text x="58" y="690" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9ecf3" text-anchor="start">100,000 Monte Carlo races</text>
+<text x="1182" y="690" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="400" fill="#79839a" text-anchor="end">seed 20260913</text>
+<rect x="58.0" y="704" width="270.5" height="72" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<text x="70.0" y="724" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="600" fill="#ff5a37" text-anchor="start">1</text>
+<text x="86.0" y="724" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e9ecf3" text-anchor="start">Simulate starting grid</text>
+<text x="70.0" y="744" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="400" fill="#79839a" text-anchor="start">qualifying is unknown, so it is</text>
+<text x="70.0" y="758" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="400" fill="#79839a" text-anchor="start">sampled: σ = 0.55</text>
+<rect x="342.5" y="704" width="270.5" height="72" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<text x="354.5" y="724" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="600" fill="#ff5a37" text-anchor="start">2</text>
+<text x="370.5" y="724" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e9ecf3" text-anchor="start">Draw race pace</text>
+<text x="354.5" y="744" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="400" fill="#79839a" text-anchor="start">independent of the grid draw,</text>
+<text x="354.5" y="758" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="400" fill="#79839a" text-anchor="start">σ = 0.6</text>
+<rect x="627.0" y="704" width="270.5" height="72" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<text x="639.0" y="724" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="600" fill="#ff5a37" text-anchor="start">3</text>
+<text x="655.0" y="724" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e9ecf3" text-anchor="start">Combine grid + race pace</text>
+<text x="639.0" y="744" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="400" fill="#79839a" text-anchor="start">track position vs. pace, plus</text>
+<text x="639.0" y="758" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="400" fill="#79839a" text-anchor="start">1.6/2.0 slot swings</text>
+<rect x="911.5" y="704" width="270.5" height="72" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
+<text x="923.5" y="724" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="600" fill="#ff5a37" text-anchor="start">4</text>
+<text x="939.5" y="724" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="600" fill="#e9ecf3" text-anchor="start">Simulate retirements &amp; shared incidents</text>
+<text x="923.5" y="744" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="400" fill="#79839a" text-anchor="start">22% of races chaotic at ×2.1,</text>
+<text x="923.5" y="758" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="400" fill="#79839a" text-anchor="start">marginals preserved</text>
+<line x1="620.0" y1="792" x2="620.0" y2="809" stroke="#2b3342" stroke-width="1.5"/><path d="M616.0,809 L624.0,809 L620.0,816 Z" fill="#2b3342"/>
+<text x="40" y="834" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" fill="#ff5a37" text-anchor="start" letter-spacing="2.2">05  PUBLISHED</text>
+<rect x="40" y="848" width="1160" height="56" rx="3" fill="#171c26" stroke="#ff5a37" stroke-width="1"/>
+<text x="58" y="882" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#e9ecf3" text-anchor="start">win</text>
+<text x="114.8" y="882" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#e9ecf3" text-anchor="start">podium</text>
+<text x="194.39999999999998" y="882" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#e9ecf3" text-anchor="start">top 10</text>
+<text x="274.0" y="882" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#e9ecf3" text-anchor="start">retirement</text>
+<text x="384.0" y="882" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#e9ecf3" text-anchor="start">expected finish</text>
+<text x="532.0" y="882" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="500" fill="#e9ecf3" text-anchor="start">P10-P90 band</text>
+<text x="1182" y="882" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="end">probabilities come directly from simulation outcomes</text>
+<path d="M1198,876 L1218,876 L1218,498 L1198,498" fill="none" stroke="#2b3342" stroke-width="1.5"/><path d="M1198,494 L1198,502 L1190,498 Z" fill="#2b3342"/>
+<text transform="translate(1234,687) rotate(-90)" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" fill="#79839a" letter-spacing="1.6">RACE-BY-RACE TESTING  ·  ADOPTION GATE</text>
+<line x1="40" y1="926" x2="1200" y2="926" stroke="#2b3342" stroke-width="1"/>
+<text x="40" y="946" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" fill="#5b6577" text-anchor="start" letter-spacing="2">INGESTED, MEASURED, NOT USED</text>
+<text x="40.0" y="968" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#aab4c4" text-anchor="start">34,131 practice laps</text>
+<text x="40.0" y="984" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#5b6577" text-anchor="start">no validated incremental lift yet</text>
+<text x="330.0" y="968" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#aab4c4" text-anchor="start">20,567 counted passes</text>
+<text x="330.0" y="984" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#5b6577" text-anchor="start">inert at this stage</text>
+<text x="620.0" y="968" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#aab4c4" text-anchor="start">track-car compatibility</text>
+<text x="620.0" y="984" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#5b6577" text-anchor="start">rejected</text>
+<text x="910.0" y="968" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="11.5" font-weight="500" fill="#aab4c4" text-anchor="start">corner telemetry</text>
+<text x="910.0" y="984" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="400" fill="#5b6577" text-anchor="start">never backtested</text>
+</svg>

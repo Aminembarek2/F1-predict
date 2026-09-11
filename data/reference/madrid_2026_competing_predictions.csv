@@ -1,0 +1,16 @@
+source,kind,stage,published_utc,driver_code,win_probability,rank,notes,url
+oddsshopper_llm_panel,quantitative_model,PRE_WEEKEND,2026-09-08,ANT,0.310,1,"median of 8-LLM panel, 2 rounds",https://www.oddsshopper.com/articles/prediction-markets/spanish-grand-prix-winner-model-verdict
+oddsshopper_llm_panel,quantitative_model,PRE_WEEKEND,2026-09-08,RUS,0.139,2,,https://www.oddsshopper.com/articles/prediction-markets/spanish-grand-prix-winner-model-verdict
+oddsshopper_llm_panel,quantitative_model,PRE_WEEKEND,2026-09-08,HAM,0.125,3,,https://www.oddsshopper.com/articles/prediction-markets/spanish-grand-prix-winner-model-verdict
+oddsshopper_llm_panel,quantitative_model,PRE_WEEKEND,2026-09-08,NOR,0.124,4,,https://www.oddsshopper.com/articles/prediction-markets/spanish-grand-prix-winner-model-verdict
+oddsshopper_llm_panel,quantitative_model,PRE_WEEKEND,2026-09-08,LEC,0.082,5,,https://www.oddsshopper.com/articles/prediction-markets/spanish-grand-prix-winner-model-verdict
+oddsshopper_llm_panel,quantitative_model,PRE_WEEKEND,2026-09-08,VER,0.082,6,,https://www.oddsshopper.com/articles/prediction-markets/spanish-grand-prix-winner-model-verdict
+oddsshopper_llm_panel,quantitative_model,PRE_WEEKEND,2026-09-08,PIA,0.046,7,,https://www.oddsshopper.com/articles/prediction-markets/spanish-grand-prix-winner-model-verdict
+oddsshopper_llm_panel,quantitative_model,PRE_WEEKEND,2026-09-08,GAS,0.021,8,,https://www.oddsshopper.com/articles/prediction-markets/spanish-grand-prix-winner-model-verdict
+f1predictions_ai,quantitative_model,PRE_WEEKEND,2026-09-11,ANT,,1,"score 73 (not a win probability); lineup is 2 races stale (lists HAD at Red Bull)",https://f1predictions.ai/predictions/spanish-grand-prix
+f1predictions_ai,quantitative_model,PRE_WEEKEND,2026-09-11,RUS,,2,score 68,https://f1predictions.ai/predictions/spanish-grand-prix
+f1predictions_ai,quantitative_model,PRE_WEEKEND,2026-09-11,HAM,,3,score 61,https://f1predictions.ai/predictions/spanish-grand-prix
+f1predictions_ai,quantitative_model,PRE_WEEKEND,2026-09-11,NOR,,4,score 54,https://f1predictions.ai/predictions/spanish-grand-prix
+f1predictions_ai,quantitative_model,PRE_WEEKEND,2026-09-11,LEC,,5,score 49,https://f1predictions.ai/predictions/spanish-grand-prix
+f1predictions_ai,quantitative_model,PRE_WEEKEND,2026-09-11,VER,,6,score 44,https://f1predictions.ai/predictions/spanish-grand-prix
+f1predictions_ai,quantitative_model,PRE_WEEKEND,2026-09-11,PIA,,7,score 39,https://f1predictions.ai/predictions/spanish-grand-prix

@@ -1,0 +1,8 @@
+experiment,variant,top1,winner_top3,ndcg5,spearman,rank_mae,winner_logloss
+track_car_compatibility,pooled(no_compat),0.5,0.804,0.735,0.707,3.741,1.4458
+track_car_compatibility,compat_bw0.7,0.489,0.717,0.716,0.697,3.785,1.5712
+track_car_compatibility,compat_bw1.0,0.489,0.739,0.717,0.697,3.782,1.5529
+track_car_compatibility,compat_bw1.6,0.467,0.783,0.725,0.7,3.766,1.4906
+track_car_compatibility,compat_bw2.5,0.489,0.783,0.729,0.704,3.768,1.4526
+dual_qualifying_race_strength,single_strength,0.5,0.804,0.735,0.707,3.741,1.4458
+dual_qualifying_race_strength,dual_qual_race,0.478,0.772,0.718,0.71,3.74,1.5014

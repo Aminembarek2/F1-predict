@@ -1,0 +1,27 @@
+feature_family,formula_or_method,earliest_legal_stage,data_source
+Corner curvature,kappa=|x'y''-y'x''|/(x'^2+y'^2)^(3/2),PRE_WEEKEND/SESSION,FastF1 XY / circuit geometry
+Braking Efficiency Index,(v_entry^2-v_apex^2)/(2*d_brake),POST_FP1+,FastF1/OpenF1 telemetry
+Traction Index,(v_exit-v_apex)/delta_t,POST_FP1+,FastF1/OpenF1 telemetry
+Exit Amplification,delta_v_exit * downstream_straight_length,POST_FP1+,Telemetry + corner geometry
+Straight Time Gain,L*(1/v_slower-1/v_faster),POST_FP1+,Telemetry + geometry
+Aero Commitment,lateral_g * throttle_fraction,POST_FP1+,Telemetry + curvature
+Corner Performance Score,within-corner residual vs expected car/conditions,POST_FP1+,Telemetry + hierarchy
+Track Demand Vector,low/medium/high + braking/traction/aero/exit demand,PRE_WEEKEND,Historical telemetry/geometry
+Car Capability Vector,shrunk low/medium/high + braking/traction/aero strength,PRE_WEEKEND/POST_SESSION,Historical telemetry
+Track-Car Compatibility,"cosine(track_demand, car_capability)",PRE_WEEKEND,Derived
+Nearest-track transfer,cosine similarity in track-demand space,PRE_WEEKEND,Derived
+Driver/Car decomposition,ridge fixed effects / teammate adjustment,PRE_WEEKEND,Historical telemetry
+Corner headwind/crosswind,wind projected onto segment heading,PRE_WEEKEND/SESSION,Archived forecast + geometry
+Temperature sensitivity,robust slope of pace residual vs track temperature,PRE_WEEKEND,Historical sessions
+Wet Skill,wet driver residual minus car expected pace,PRE_WEEKEND,Historical wet sessions
+Tyre degradation,Huber regression on tyre age + age² + temperature,PRE_WEEKEND/SESSION,Stints + weather
+Tyre warm-up,laps to reach steady-state pace tolerance,PRE_WEEKEND/SESSION,Stints
+Fuel correction,remove expected fuel-burn lap-time trend,SESSION,Practice/race history
+Track evolution,time-bin median correction of session pace,POST_FP1+,Practice timing
+Single-lap pace,median of best clean corrected laps,POST_FP1+,Practice laps
+Long-run pace,median clean pace on stints >=5 laps,POST_FP1+,Practice laps/stints
+Dirty-air penalty,pace residual dirty-air minus clean-air,PRE_WEEKEND/SESSION,Intervals + timing
+Overtake probability,"logistic P(pass | gap, pace, tyre, straight, DRS)",PRE_WEEKEND/RACE_SIM,Historical intervals/laps
+Reliability prior,Beta-smoothed shifted DNF rate + component state,PRE_WEEKEND,Results + FIA documents
+Pit-loss / undercut,pit traversal loss; new-tyre pace gain / pit loss,PRE_WEEKEND/RACE_SIM,Historical pit/stint data
+Monte Carlo outcomes,pace + strategy uncertainty + DNF sampling,RACE_START,All pre-race modules

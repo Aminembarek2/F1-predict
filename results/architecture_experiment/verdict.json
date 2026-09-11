@@ -1,0 +1,6 @@
+{
+  "adopted": [],
+  "evidence_status": "invalid_for_chronological_adoption",
+  "reason": "Variance fitted on 2024\u20132025 was applied to 2022\u20132023. Disjoint years do not satisfy chronological validation. Other arms remain diagnostic; no architectural criticism is resolved by their scores.",
+  "replacement": "results/state_space_experiment/"
+}

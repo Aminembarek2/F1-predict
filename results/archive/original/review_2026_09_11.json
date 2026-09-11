@@ -1,0 +1,299 @@
+{
+  "generated_at_utc": "2026-09-11T10:34:19.845629+00:00",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "pyarrow": "25.0.1",
+    "pytest": "9.1.1"
+  },
+  "backtests": {
+    "tuning": {
+      "n_races": 92,
+      "compatible_simulation_count": 20000,
+      "stored_metrics_max_abs_difference": 4.440892098500626e-16,
+      "leaderboard": [
+        {
+          "model": "grid_reference_post_quali",
+          "n_races": 92.0,
+          "top1": 0.5543478260869565,
+          "winner_top3": 0.8695652173913043,
+          "ndcg5": 0.7957128329224309,
+          "spearman": 0.7290678958610377,
+          "rank_mae": 3.4404271548436314,
+          "winner_logloss": 2.9878966208549858,
+          "winner_brier": 0.04786203354283667
+        },
+        {
+          "model": "strength_mc",
+          "n_races": 92.0,
+          "top1": 0.5108695652173914,
+          "winner_top3": 0.7934782608695652,
+          "ndcg5": 0.7371820116957204,
+          "spearman": 0.7066744084537531,
+          "rank_mae": 3.734324942791762,
+          "winner_logloss": 1.442262976928776,
+          "winner_brier": 0.03280670633552631
+        },
+        {
+          "model": "form5",
+          "n_races": 92.0,
+          "top1": 0.4673913043478261,
+          "winner_top3": 0.7065217391304348,
+          "ndcg5": 0.6939335470357838,
+          "spearman": 0.6630276969967709,
+          "rank_mae": 3.9795512331553518,
+          "winner_logloss": 2.9878966208549858,
+          "winner_brier": 0.04786203354283667
+        },
+        {
+          "model": "championship",
+          "n_races": 92.0,
+          "top1": 0.45652173913043476,
+          "winner_top3": 0.7717391304347826,
+          "ndcg5": 0.6912235587079978,
+          "spearman": 0.6702690229409842,
+          "rank_mae": 3.93649885583524,
+          "winner_logloss": 2.9878966208549858,
+          "winner_brier": 0.04786203354283667
+        },
+        {
+          "model": "last_race",
+          "n_races": 92.0,
+          "top1": 0.40217391304347827,
+          "winner_top3": 0.6956521739130435,
+          "ndcg5": 0.6697108108949783,
+          "spearman": 0.5338141087274552,
+          "rank_mae": 4.363927027714213,
+          "winner_logloss": 2.9878966208549858,
+          "winner_brier": 0.04786203354283667
+        }
+      ],
+      "win_ece": 0.005153723986856516,
+      "uniform_win_ece": 0.0,
+      "displayed_rank_top1": 0.5,
+      "row_pooled_dnf_observed": 0.11171960569550932,
+      "row_pooled_dnf_displayed": 0.12045372056716203,
+      "row_pooled_dnf_simulated": 0.14929370208105147,
+      "row_pooled_interval_coverage": 0.8116100766703176,
+      "rerun_predictions_max_abs_difference": 0.0
+    },
+    "2026_holdout": {
+      "n_races": 13,
+      "compatible_simulation_count": 30000,
+      "stored_metrics_max_abs_difference": 8.881784197001252e-16,
+      "leaderboard": [
+        {
+          "model": "grid_reference_post_quali",
+          "n_races": 13.0,
+          "top1": 0.6923076923076923,
+          "winner_top3": 0.9230769230769231,
+          "ndcg5": 0.8202831537374031,
+          "spearman": 0.7901002506265666,
+          "rank_mae": 3.1928515928515933,
+          "winner_logloss": 3.0646962309812866,
+          "winner_brier": 0.04455422363431023
+        },
+        {
+          "model": "championship",
+          "n_races": 13.0,
+          "top1": 0.46153846153846156,
+          "winner_top3": 0.6923076923076923,
+          "ndcg5": 0.6553319219228011,
+          "spearman": 0.6611775479422538,
+          "rank_mae": 4.106870906870907,
+          "winner_logloss": 3.0646962309812866,
+          "winner_brier": 0.04455422363431023
+        },
+        {
+          "model": "last_race",
+          "n_races": 13.0,
+          "top1": 0.38461538461538464,
+          "winner_top3": 0.6923076923076923,
+          "ndcg5": 0.642454488774746,
+          "spearman": 0.570851052971796,
+          "rank_mae": 4.638084138084138,
+          "winner_logloss": 3.0646962309812866,
+          "winner_brier": 0.04455422363431023
+        },
+        {
+          "model": "strength_mc",
+          "n_races": 13.0,
+          "top1": 0.15384615384615385,
+          "winner_top3": 0.5384615384615384,
+          "ndcg5": 0.5970793650230912,
+          "spearman": 0.7714532371653114,
+          "rank_mae": 3.767887667887668,
+          "winner_logloss": 1.897352865409722,
+          "winner_brier": 0.03996302719730886
+        },
+        {
+          "model": "form5",
+          "n_races": 13.0,
+          "top1": 0.07692307692307693,
+          "winner_top3": 0.5384615384615384,
+          "ndcg5": 0.4956217865923511,
+          "spearman": 0.6522048900531873,
+          "rank_mae": 4.187223887223887,
+          "winner_logloss": 3.0646962309812866,
+          "winner_brier": 0.04455422363431023
+        }
+      ],
+      "win_ece": 0.011417921146953405,
+      "uniform_win_ece": 0.0,
+      "displayed_rank_top1": 0.15384615384615385,
+      "row_pooled_dnf_observed": 0.17562724014336917,
+      "row_pooled_dnf_displayed": 0.13853148271232965,
+      "row_pooled_dnf_simulated": 0.17243452807646356,
+      "row_pooled_interval_coverage": 0.8315412186379928,
+      "rerun_predictions_max_abs_difference": 0.0
+    },
+    "2026_postquali": {
+      "n_races": 13,
+      "compatible_simulation_count": 20000,
+      "stored_metrics_max_abs_difference": 8.881784197001252e-16,
+      "leaderboard": [
+        {
+          "model": "grid_reference_post_quali",
+          "n_races": 13.0,
+          "top1": 0.6923076923076923,
+          "winner_top3": 0.9230769230769231,
+          "ndcg5": 0.8202831537374031,
+          "spearman": 0.7901002506265666,
+          "rank_mae": 3.1928515928515933,
+          "winner_logloss": 3.0646962309812866,
+          "winner_brier": 0.04455422363431023
+        },
+        {
+          "model": "strength_mc",
+          "n_races": 13.0,
+          "top1": 0.6923076923076923,
+          "winner_top3": 0.9230769230769231,
+          "ndcg5": 0.8097180427060968,
+          "spearman": 0.8333713242381973,
+          "rank_mae": 3.1325674325674333,
+          "winner_logloss": 1.1362328677637732,
+          "winner_brier": 0.023787100379148628
+        },
+        {
+          "model": "championship",
+          "n_races": 13.0,
+          "top1": 0.46153846153846156,
+          "winner_top3": 0.6923076923076923,
+          "ndcg5": 0.6553319219228011,
+          "spearman": 0.6611775479422538,
+          "rank_mae": 4.106870906870907,
+          "winner_logloss": 3.0646962309812866,
+          "winner_brier": 0.04455422363431023
+        },
+        {
+          "model": "last_race",
+          "n_races": 13.0,
+          "top1": 0.38461538461538464,
+          "winner_top3": 0.6923076923076923,
+          "ndcg5": 0.642454488774746,
+          "spearman": 0.570851052971796,
+          "rank_mae": 4.638084138084138,
+          "winner_logloss": 3.0646962309812866,
+          "winner_brier": 0.04455422363431023
+        },
+        {
+          "model": "form5",
+          "n_races": 13.0,
+          "top1": 0.07692307692307693,
+          "winner_top3": 0.5384615384615384,
+          "ndcg5": 0.4956217865923511,
+          "spearman": 0.6522048900531873,
+          "rank_mae": 4.187223887223887,
+          "winner_logloss": 3.0646962309812866,
+          "winner_brier": 0.04455422363431023
+        }
+      ],
+      "win_ece": 0.0222663082437276,
+      "uniform_win_ece": 0.0,
+      "displayed_rank_top1": 0.6923076923076923,
+      "row_pooled_dnf_observed": 0.17562724014336917,
+      "row_pooled_dnf_displayed": 0.13853148271232965,
+      "row_pooled_dnf_simulated": 0.17113906810035845,
+      "row_pooled_interval_coverage": 0.8494623655913979,
+      "rerun_predictions_max_abs_difference": 0.0
+    }
+  },
+  "input_sha256": {
+    "data/raw/qualifying.parquet": "904351091bb2019f1fd057d233bc52cb888896c0d4cee9972f6eba29ca540c43",
+    "data/raw/results.parquet": "3094ddb51eff3472c430a4a217926c895ddd90ba81baaa610276c4a3c939e1c5",
+    "data/raw/schedule.parquet": "f28c014fe972202076a91210685adfff41b0bea9eb6925d1b7b9f1cf537c3841",
+    "data/reference/circuit_specs.csv": "a82d8b0737e660f7f53d34eab343ad506b747cc3906863bb5992b7bfd1a8f72d",
+    "f1pred/__init__.py": "08a53ef82ab017a74096a707877a90d746cb3bbd6d3a2fd63c359d78d928e8ec",
+    "f1pred/cli.py": "5515247fae51b369b31bea7c56b5fb138a88ed6a10ce7c2154a38f8cb88b4c49",
+    "f1pred/config.py": "c2684457662eef8271c8459df8f04f74d610985d1f47104e6be152521da1d234",
+    "f1pred/evaluation/__init__.py": "641171dee645f24895d1e34ac168064f29c51715b04335b0de0dcb2a393b4cae",
+    "f1pred/evaluation/ablation.py": "7e36ddbe3913110b86051bc1c8a242cb76bf6ee7408cbe82d3907ee5246946a5",
+    "f1pred/evaluation/backtest.py": "290ff6f41082a44e89d0708e8dd20c84b7aec0cc511eb1b1bb4fb157c46bdd8f",
+    "f1pred/evaluation/market.py": "a5ba44b4f8720f1dc69c37d572890d71cc5f028893c74aec28e7aad0c8f8a017",
+    "f1pred/evaluation/metrics.py": "efe5405ea03649da1d860d828fd72f543921bb533fadd19290e5f6872166decb",
+    "f1pred/features/__init__.py": "cb74ad2148fdea878d1aa3cc4c61a954c9b617734108ef2647fa1280c629749b",
+    "f1pred/features/circuits.py": "9d9adbfbc875c3060813f240598f5f946f2e752d7433abecae69350ba6c8fdc4",
+    "f1pred/features/compatibility.py": "7ed7bd46380e9de5fa7d3c1310cdd191e025c1af22a8a121646a66bda72b029a",
+    "f1pred/features/pace.py": "aa0b2b2f2f4345bfe16489edb8555fa9732ca1104e9a6f5621b31b94257e9817",
+    "f1pred/features/reliability.py": "cf81755ec94244d2170fad7ded317a26ff58cdf4f17c8baf354a7006bd45ba4a",
+    "f1pred/forecast.py": "e0e74c1fc5c44e93f1ce634d9344900d31168ea63c9bdd49c2de8b02fb86f497",
+    "f1pred/http_cache.py": "3d68b14ee3c2188805c86c6dca3e09e60cdf2621caacd1da5fff2197f6743cc8",
+    "f1pred/leakage.py": "f8e6750244880f98e5fc2efc0a1b394452dfdde1a89518c7c992d4c638ae2329",
+    "f1pred/models/__init__.py": "bdbc8a2469d5f6e8461fd837f7cd44f5721cc17403730dd8998ac905bf9efa3f",
+    "f1pred/models/calibration.py": "f008f0a3398913481554f747f118dbf18988de8e16b655ed25a334cbab6eacd9",
+    "f1pred/pipeline.py": "66748a4b59abeeff8e4d35bd11244000e65c30bf06f0e82792e185b1fe804bc2",
+    "f1pred/sim/__init__.py": "78083d62f89f4b517068f2bbb11bd6354a8df29b99f8a55aef8bac7d139c96da",
+    "f1pred/sim/race.py": "d87ced554288d3a6b7c1969eef6184775e945b09c24148345c5941d00cdf50ec",
+    "f1pred/sources/__init__.py": "b7075c5c8c4e6b20a567f3642ad08fd38b899665c4a7dc129ad6c71107d48a90",
+    "f1pred/sources/jolpica.py": "86ad892ffeb603640e7f45f4000703d26c5243b5cb0ba257efc9cd85d94cffcd",
+    "research/review_checks.py": "409ac693603bf59375ed7de3d2d8c9f9622f0d684e34f0c1b6f0a580bd97c31f",
+    "results/backtest_2026_holdout_predictions.parquet": "dad610eb25645fdf4c2e663944d2fc0121554a06e431f489e65db3851ff0be6f",
+    "results/backtest_2026_postquali_predictions.parquet": "aba82961dd4c4a22c5a4620f127ccd80dc373c04446dfecd2c6fa17910b74d66",
+    "results/backtest_tuning_predictions.parquet": "9c2caa3e5c13af0106722ac7e69dbf411f13680eb0f3619054371b015a0aa5d6"
+  },
+  "intact_data_index_mismatches": 0,
+  "missing_event_index_leak": {
+    "removed_event": "2014_01",
+    "target": "2025_05",
+    "target_observations_admitted": 38,
+    "driver_effect_max_change_when_target_scores_corrupted": 0.8481557260911234
+  },
+  "timestamp_guard_invalid_input": {
+    "missing": "accepted",
+    "malformed": "accepted"
+  },
+  "shifted_aggregation_same_event_value": 10.0,
+  "live_postquali": {
+    "grid_supplied_in_entries": true,
+    "still_simulates_qualifying": true,
+    "pre_vs_post_win_probability_max_difference": 0.0
+  },
+  "pitlane_entries_dropped": [
+    "stroll",
+    "vettel"
+  ],
+  "season_opener_entry_mismatch": {
+    "previous_round_entries_not_among_actual_starters": [
+      "bottas",
+      "colapinto",
+      "kevin_magnussen",
+      "perez",
+      "zhou"
+    ],
+    "actual_starters_missing_from_live_entries": [
+      "antonelli",
+      "bearman",
+      "bortoleto",
+      "hadjar",
+      "ocon"
+    ]
+  },
+  "dnf_chaos_probe": {
+    "input_probability": 0.1,
+    "analytical_marginal_probability": 0.1242,
+    "simulated_probability": 0.12423200000000001
+  },
+  "madrid_rerun_max_abs_difference": 1.7763568394002505e-15
+}

@@ -1,0 +1,203 @@
+{
+  "project": "F1 Predictor Best Practice",
+  "version": "2.1.0",
+  "built": "2026-09-11",
+  "validation": "30/30 pytest passed; notebook executed locally with network-demo disabled",
+  "files": [
+    {
+      "path": "archive/original/f1_predictor.ipynb",
+      "bytes": 69071,
+      "sha256": "a75cb8b32f4c01dd94e55f251f14c0ea7166ea56412cd06ce04b3378d502ccf8"
+    },
+    {
+      "path": "KAGGLE_RUN_GUIDE.md",
+      "bytes": 866,
+      "sha256": "b5bb5137f5015c2b2e296aafa01a733d2527bc04afefc413b4f07bb8469096f2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4749,
+      "sha256": "27b3aaaff4bdc07ec2e18cb2054ee25b2b1a6123af9f372018403fa8da63ce4b"
+    },
+    {
+      "path": "RESULTS_SUMMARY.md",
+      "bytes": 2311,
+      "sha256": "a6aa9347bfa0ebf1ad1ac6cbbcc1c7a64165528b81240315639bc53eccc5421f"
+    },
+    {
+      "path": "VERSION.txt",
+      "bytes": 24,
+      "sha256": "51385756d0dc26e07c5292d66f60de1ab1eec43a84677206b61545dfb9bedbbc"
+    },
+    {
+      "path": "data/reference/2026_regime_stress_test.csv",
+      "bytes": 545,
+      "sha256": "07478ac1caf34bb4aa0e86dbdbbdd0b06d19fc3b47de97896346579dc3169056"
+    },
+    {
+      "path": "data/reference/feature_catalog.csv",
+      "bytes": 7279,
+      "sha256": "8a06c6029b44505c7eed0489b0d5bef6130f20490f547939749194fb4be1897c"
+    },
+    {
+      "path": "data/reference/feature_experiments.csv",
+      "bytes": 938,
+      "sha256": "8c985723ebb755a7f8f6dec0bff8e7654bf1b3741a17b1dba1732a40effecdd1"
+    },
+    {
+      "path": "data/reference/feature_importance_gain.csv",
+      "bytes": 180,
+      "sha256": "330d275f936d9284e33e9a0139266e710347f4aa5d6d45c04d05061a8855e7c8"
+    },
+    {
+      "path": "data/reference/final_ranker_metrics.csv",
+      "bytes": 307,
+      "sha256": "b6dbddc0268b6c49587b992ff873ca2735ea0b3107087926e2e658f0678bbfa1"
+    },
+    {
+      "path": "data/reference/holdout_predictions.csv",
+      "bytes": 258777,
+      "sha256": "cc7b75f327e1a7d319e9755f12073dfaa0f77fd93185f95dfccd66916cc1f566"
+    },
+    {
+      "path": "data/reference/model_leaderboard.csv",
+      "bytes": 667,
+      "sha256": "97b236e310bc7b9673ce740fb3489411af772cd4b4822f4a34cc282ad24b1b12"
+    },
+    {
+      "path": "images/proxy_ablation_ndcg5.png",
+      "bytes": 126529,
+      "sha256": "4284fa117c3b9ef467ab63660404c0774baa24e075e5b2ab933d4d03dfac659c"
+    },
+    {
+      "path": "images/proxy_ablation_top1.png",
+      "bytes": 130575,
+      "sha256": "877e6ddfb75dd86631ed955fb0d9d6d2d8eb8cac9f9f71f8f9ce4bb8cfb6b09b"
+    },
+    {
+      "path": "images/proxy_top1_uncertainty.png",
+      "bytes": 133550,
+      "sha256": "2b0bdf5037db0e63869dd80e8d1ed07b73e041eaff8d4d8ce386c7f56e4e31ef"
+    },
+    {
+      "path": "images/regime_stress_2026_top1.png",
+      "bytes": 86207,
+      "sha256": "8e29cae5f86eb2ad76e24c08c01518f03a673e8ff396a327bf92f031477bc28a"
+    },
+    {
+      "path": "images/validation_summary.png",
+      "bytes": 24342,
+      "sha256": "f3f46acf41890cb65f332840e3656dbc58a832bc90eb53896b6aa1f4438bcbdf"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 146,
+      "sha256": "f1041df2140ef69e30b7e5dc4c8abd5862949f870277fa5a8c334246c265e67d"
+    },
+    {
+      "path": "research/sources_and_methodology.md",
+      "bytes": 3725,
+      "sha256": "81fe75eb9327aef4b077ba067e8717d9cf849a0d12379fb3301f42150685f6e9"
+    },
+    {
+      "path": "results/formula_catalog.csv",
+      "bytes": 2557,
+      "sha256": "144678ee414d2d19911e9c7b6cf3dfa273bed2e207a31079a0249d0afdecd4d4"
+    },
+    {
+      "path": "results/holdout_predictions_2025.csv",
+      "bytes": 255675,
+      "sha256": "2fea846a9422852b6177e6262ce5ee71d08c2cafd45f5c6acf3c232c972abbc5"
+    },
+    {
+      "path": "results/module_status.csv",
+      "bytes": 1461,
+      "sha256": "91d0ac09def89d6e0da5f36dfebc06814c75e88d35313f8ef2681e268f5a72aa"
+    },
+    {
+      "path": "results/proxy_ablation_2025.csv",
+      "bytes": 1061,
+      "sha256": "d7820792606f6e694f77748676776d2d227791a97a3ce628292c0f27115a56c8"
+    },
+    {
+      "path": "results/proxy_uncertainty_2025.csv",
+      "bytes": 748,
+      "sha256": "d4d534d942754ea860b55ccb80293a86e27606fc29a3c8a2fb000c20671a34e8"
+    },
+    {
+      "path": "results/proxy_vs_grid_by_race_2025.csv",
+      "bytes": 1089,
+      "sha256": "c8c8682b1dd28b7fd579c765db705c639d6c93432495f7958d297a8bbb359c4d"
+    },
+    {
+      "path": "results/pytest_junit.xml",
+      "bytes": 3156,
+      "sha256": "d259bd0d1b936d6a3f787b16f928bfce93d301ecf9253fc363c77dd434eb9f44"
+    },
+    {
+      "path": "results/regime_stress_test_2026.csv",
+      "bytes": 544,
+      "sha256": "3e925f2a63b613d0e7eeef3a8b97e17f09e1ebe49eade4bfb49655d555f992cd"
+    },
+    {
+      "path": "results/run_summary.json",
+      "bytes": 786,
+      "sha256": "80e4255b647e5a05ef5db5557692914af24bdd054c44f1219e923fcce4c01581"
+    },
+    {
+      "path": "results/validation_tests_expanded.csv",
+      "bytes": 402,
+      "sha256": "4d80af5d435b43db6a52c0eeaccdf26e8c888d9b5f06bb76d675f3cb6eacdb82"
+    },
+    {
+      "path": "run_full_v2.py",
+      "bytes": 6661,
+      "sha256": "cdd152481591cfcc46f75a8b1da01ebac606caf5917557df40413f6885bb2c9e"
+    },
+    {
+      "path": "f1pred/legacy/__init__.py",
+      "bytes": 79,
+      "sha256": "aab9146c5421c9c1b2ccfcf3f9ba6da0f9be341cfe101e5be78dc4b6babebdf2"
+    },
+    {
+      "path": "f1pred/legacy/aggregation.py",
+      "bytes": 2010,
+      "sha256": "15a380e976edb36b02f38445cf34e5e1e0ff837adee13457a5901d6c96870ac8"
+    },
+    {
+      "path": "f1pred/legacy/data_sources.py",
+      "bytes": 3059,
+      "sha256": "a69513b9f5d500e816f1d3a8a898cb0de92911cf268256e3852848804c4312a8"
+    },
+    {
+      "path": "f1pred/legacy/leakage.py",
+      "bytes": 1351,
+      "sha256": "989da82ec86446f02c4e5de9481ec059c8248380872f5c4059e43ca25a66fc8a"
+    },
+    {
+      "path": "f1pred/legacy/modeling.py",
+      "bytes": 4694,
+      "sha256": "a5e46dec83fa0adb35f6122158eb14b6dfc568c1b8be192a43731829164b555f"
+    },
+    {
+      "path": "f1pred/legacy/features.py",
+      "bytes": 16912,
+      "sha256": "81fb1e129d5900b74ecb38847f65f835400664ffe76c720202f469a533ea71c4"
+    },
+    {
+      "path": "f1pred/legacy/proxy_experiment.py",
+      "bytes": 2159,
+      "sha256": "36d0087ac231dd85c1c2dbb5960931b49e0aa359e6f0aaf897b4b40f86e67fc5"
+    },
+    {
+      "path": "f1pred/legacy/session_pipeline.py",
+      "bytes": 4995,
+      "sha256": "32dbc55c3c798cd925d7d39d4b54655ffb29101d5ba210573cf4f77269bb4f80"
+    },
+    {
+      "path": "tests/test_modules_pytest.py",
+      "bytes": 6913,
+      "sha256": "b7b7fa36c05db7b9aae5697e2540423f241a4a9767f42b6421ecb790947c3ce9"
+    }
+  ]
+}

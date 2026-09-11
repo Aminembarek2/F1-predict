@@ -1,0 +1,157 @@
+[
+  {
+    "season": 2021,
+    "variances": {
+      "team_prior": 0.8966091049010512,
+      "driver_prior": 0.008010914212395323,
+      "team_step": 0.012149099010545707,
+      "driver_step": 0.00010040918386993219,
+      "qualifying": 0.7256473613741725,
+      "race": 0.11008057571249677
+    },
+    "as_of_index": 138.0,
+    "last_training_index": 137.0,
+    "n_events": 138,
+    "negative_log_likelihood": 3966.7055532221543,
+    "converged": true,
+    "starts": [
+      {
+        "converged": true,
+        "nll": 3966.7055572698823,
+        "iterations": 29,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "converged": true,
+        "nll": 3966.7055532221543,
+        "iterations": 25,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    ],
+    "at_boundary": []
+  },
+  {
+    "season": 2022,
+    "variances": {
+      "team_prior": 1.0421200100480965,
+      "driver_prior": 0.045335700072461765,
+      "team_step": 0.018358967077837424,
+      "driver_step": 0.00017041372816066732,
+      "qualifying": 0.601741471559593,
+      "race": 0.5577319809913381
+    },
+    "as_of_index": 160.0,
+    "last_training_index": 159.0,
+    "n_events": 160,
+    "negative_log_likelihood": 5384.42186412115,
+    "converged": true,
+    "starts": [
+      {
+        "converged": true,
+        "nll": 5384.421872462549,
+        "iterations": 20,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "converged": true,
+        "nll": 5384.42186412115,
+        "iterations": 26,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    ],
+    "at_boundary": []
+  },
+  {
+    "season": 2023,
+    "variances": {
+      "team_prior": 0.8223032401635229,
+      "driver_prior": 0.040016562129011675,
+      "team_step": 0.015589296393120382,
+      "driver_step": 0.00012668931007326723,
+      "qualifying": 0.5685539565161669,
+      "race": 0.48871676935872177
+    },
+    "as_of_index": 182.0,
+    "last_training_index": 181.0,
+    "n_events": 182,
+    "negative_log_likelihood": 5981.748776603852,
+    "converged": true,
+    "starts": [
+      {
+        "converged": true,
+        "nll": 5981.748811608397,
+        "iterations": 29,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "converged": true,
+        "nll": 5981.748776603852,
+        "iterations": 28,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    ],
+    "at_boundary": []
+  },
+  {
+    "season": 2024,
+    "variances": {
+      "team_prior": 0.7146382547658328,
+      "driver_prior": 0.04129175463695609,
+      "team_step": 0.008885774361875824,
+      "driver_step": 0.00018150606195001592,
+      "qualifying": 0.8966087836850835,
+      "race": 0.42244938450849845
+    },
+    "as_of_index": 204.0,
+    "last_training_index": 203.0,
+    "n_events": 204,
+    "negative_log_likelihood": 7446.370496412276,
+    "converged": true,
+    "starts": [
+      {
+        "converged": true,
+        "nll": 7446.370638959711,
+        "iterations": 33,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "converged": true,
+        "nll": 7446.370496412276,
+        "iterations": 26,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    ],
+    "at_boundary": []
+  },
+  {
+    "season": 2025,
+    "variances": {
+      "team_prior": 0.6825208682576915,
+      "driver_prior": 0.037088723261710754,
+      "team_step": 0.008287158245580854,
+      "driver_step": 0.00016468042114072513,
+      "qualifying": 0.8522101975677042,
+      "race": 0.3841536523698074
+    },
+    "as_of_index": 228.0,
+    "last_training_index": 227.0,
+    "n_events": 228,
+    "negative_log_likelihood": 8135.259582673428,
+    "converged": true,
+    "starts": [
+      {
+        "converged": true,
+        "nll": 8135.25959086236,
+        "iterations": 33,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "converged": true,
+        "nll": 8135.259582673428,
+        "iterations": 25,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    ],
+    "at_boundary": []
+  }
+]

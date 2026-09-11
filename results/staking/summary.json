@@ -1,0 +1,16 @@
+{
+  "forecast": "results/forecast_2026_14_pre_weekend/predictions.csv",
+  "odds": "data/reference/madrid_2026_market_odds.csv",
+  "kelly_multiplier": 0.25,
+  "min_expected_value": 0.05,
+  "market_efficiency": {
+    "overround": 1.2266643419918843,
+    "house_margin_pct": 18.478106376176374,
+    "mean_abs_disagreement_pp": 0.8904764921814288,
+    "max_abs_disagreement_pp": 4.915837522941158,
+    "selections_with_positive_ev": 3,
+    "selections": 22,
+    "best_expected_value": 0.3333299999999999
+  },
+  "settlement": null
+}
