@@ -5,6 +5,11 @@ win, podium, top-ten and retirement probabilities, expected finishing positions,
 and uncertainty intervals. It does not have an established pre-weekend ranking
 advantage over the championship table.
 
+![How the forecast is built: sources, one chronological panel, leakage gates, three fitted models, the Monte Carlo simulator, and the published probabilities](images/architecture.svg)
+
+Regenerate the diagram with `python -m scripts.make_architecture` — its counts are
+read from the panel, so it cannot describe a system that no longer exists.
+
 ## Run locally
 
 Python 3.12 is used for the checked-in environment. The historical panel is
@@ -60,6 +65,27 @@ The derivation, assumptions, tests and remaining limitations are in
 [STATE_SPACE.md](docs/STATE_SPACE.md). Full Bayesian hyperparameter uncertainty,
 clean-air pace, informative censoring and race-wide incident dynamics remain
 open. The available sample does not prove an absolute ceiling on prediction.
+
+## Madrid 2026 — issued before FP1
+
+Round 14, forecast from an entry list dated 2026-09-07 with an information cutoff
+of 2026-09-11T01:00Z, before any car ran. 100,000 simulated races, seed 20260913.
+
+| # | Driver | Win | Podium | Top 10 | DNF risk |
+|--:|---|--:|--:|--:|--:|
+| 1 | Antonelli | 27.7% | 62.3% | 93.4% | 6.3% |
+| 2 | Russell | 19.7% | 51.1% | 86.1% | 13.6% |
+| 3 | Norris | 14.9% | 44.0% | 85.0% | 14.6% |
+| 4 | Hamilton | 13.3% | 43.2% | 92.4% | 6.8% |
+| 5 | Leclerc | 9.3% | 33.1% | 82.1% | 16.9% |
+| 6 | Piastri | 7.9% | 30.7% | 85.5% | 13.2% |
+| 7 | Verstappen | 5.9% | 24.5% | 78.6% | 19.6% |
+
+All 22 entries, with expected finishing position and P10–P90 bands:
+[`results/forecast_2026_14_pre_weekend/predictions.csv`](results/forecast_2026_14_pre_weekend/predictions.csv).
+Against a bookmaker board with its 22.7% overround removed the forecast agrees at
+a rank correlation of 0.928 and names the same favourite, so it is not claiming to
+know something the market does not.
 
 ## Results and evidence
 
