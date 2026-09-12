@@ -7,6 +7,10 @@ it reads the same in either GitHub theme.
 """
 
 import argparse
+import pathlib
+import shutil
+import subprocess
+import tempfile
 from xml.sax.saxutils import escape
 
 import pandas as pd
@@ -55,6 +59,63 @@ def _arrow(x, y1, y2, colour=LINE):
     )
 
 
+#: Where a headless browser usually lives. SVG is the source of truth; the PNG
+#: exists because social platforms will not accept vector files.
+BROWSERS = (
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "/Applications/Chromium.app/Contents/MacOS/Chromium",
+    "google-chrome",
+    "chromium",
+    "chromium-browser",
+)
+
+
+def _browser() -> str | None:
+    for candidate in BROWSERS:
+        if pathlib.Path(candidate).exists():
+            return candidate
+        found = shutil.which(candidate)
+        if found:
+            return found
+    return None
+
+
+def rasterise(svg: pathlib.Path, png: pathlib.Path, *, scale: int = 2) -> bool:
+    """Screenshot the SVG through a headless browser at ``scale``x.
+
+    Rendering the real SVG rather than redrawing the diagram means the PNG can
+    never disagree with the vector version; there is only one implementation.
+    """
+    browser = _browser()
+    if browser is None:
+        print("no headless browser found; skipping PNG")
+        return False
+    width, height = W, H
+    with tempfile.TemporaryDirectory() as work:
+        page = pathlib.Path(work) / "page.html"
+        page.write_text(
+            '<!doctype html><meta charset="utf-8">'
+            f"<style>html,body{{margin:0;padding:0;background:{GROUND}}}"
+            "svg{display:block}</style>\n" + svg.read_text()
+        )
+        subprocess.run(
+            [
+                browser,
+                "--headless=new",
+                "--disable-gpu",
+                "--hide-scrollbars",
+                f"--force-device-scale-factor={scale}",
+                f"--window-size={width},{height}",
+                f"--screenshot={png}",
+                page.as_uri(),
+            ],
+            check=True,
+            capture_output=True,
+            timeout=120,
+        )
+    return png.exists()
+
+
 def build(counts: dict) -> str:
     cfg = DEFAULT_MODEL_CONFIG
     sim = SimulationSettings()
@@ -87,7 +148,11 @@ def build(counts: dict) -> str:
     sources = [
         (
             "Jolpica",
-            ["results, qualifying", "driver standings", f"{counts['races']} races, 2014-2026"],
+            [
+                "results, qualifying",
+                "driver standings",
+                f"{counts['with_results']} races with results, 2014-2026",
+            ],
         ),
         ("OpenF1 + F1 timing", ["practice laps", "on-track passes", "pit-lane times"]),
         ("Reference", ["circuit specifications", "for venues with no", "racing history"]),
@@ -109,8 +174,8 @@ def build(counts: dict) -> str:
         _text(
             L + 18,
             322,
-            "A single authoritative event index on every table, plus the time each "
-            "result was published.",
+            "A single authoritative event index on every table, plus when each result "
+            "became available (assumed: race day + 1).",
             12.5,
             INK2,
         )
@@ -314,6 +379,11 @@ def build(counts: dict) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", default="architecture.svg")
+    parser.add_argument(
+        "--png",
+        action="store_true",
+        help="also write a 2x PNG, for platforms that will not take SVG",
+    )
     args = parser.parse_args()
     ensure_dirs()
 
@@ -322,6 +392,7 @@ def main() -> None:
     practice = RAW_DIR / "practice.parquet"
     counts = {
         "races": int(panel.event_order.shape[0]),
+        "with_results": int(panel.results["race_id"].nunique()),
         "observations": int(len(panel.observations)),
         "qual": int(kinds.get("qualifying", 0)),
         "race": int(kinds.get("race", 0)),
@@ -331,6 +402,10 @@ def main() -> None:
     out = IMAGES_DIR / args.out
     out.write_text(build(counts))
     print(f"wrote {out}  ({out.stat().st_size / 1024:.1f} KB)")
+    if args.png:
+        png = out.with_suffix(".png")
+        if rasterise(out, png):
+            print(f"wrote {png}  ({png.stat().st_size / 1024:.1f} KB)")
 
 
 if __name__ == "__main__":

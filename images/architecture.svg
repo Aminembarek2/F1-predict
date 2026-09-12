@@ -8,7 +8,7 @@
 <text x="56.0" y="158" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#e9ecf3" text-anchor="start">Jolpica</text>
 <text x="56.0" y="178" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">results, qualifying</text>
 <text x="56.0" y="194" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">driver standings</text>
-<text x="56.0" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">275 races, 2014-2026</text>
+<text x="56.0" y="210" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">265 races with results, 2014-2026</text>
 <rect x="432.6666666666667" y="134" width="374.6666666666667" height="86" rx="3" fill="#171c26" stroke="#2b3342" stroke-width="1"/>
 <text x="448.6666666666667" y="158" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#e9ecf3" text-anchor="start">OpenF1 + F1 timing</text>
 <text x="448.6666666666667" y="178" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="start">practice laps</text>
@@ -23,7 +23,7 @@
 <text x="40" y="262" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="500" fill="#ff5a37" text-anchor="start" letter-spacing="2.2">02  PANEL</text>
 <rect x="40" y="276" width="1160" height="74" rx="3" fill="#1d2430" stroke="#2b3342" stroke-width="1"/>
 <text x="58" y="302" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9ecf3" text-anchor="start">One chronological panel</text>
-<text x="58" y="322" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#aab4c4" text-anchor="start">A single authoritative event index on every table, plus the time each result was published.</text>
+<text x="58" y="322" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#aab4c4" text-anchor="start">A single authoritative event index on every table, plus when each result became available (assumed: race day + 1).</text>
 <text x="1182" y="302" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" font-weight="500" fill="#e9ecf3" text-anchor="end">9,859 observations</text>
 <text x="1182" y="322" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="400" fill="#79839a" text-anchor="end">5,295 qualifying · 4,564 race</text>
 <line x1="620.0" y1="350" x2="620.0" y2="367" stroke="#2b3342" stroke-width="1.5"/><path d="M616.0,367 L624.0,367 L620.0,374 Z" fill="#2b3342"/>
